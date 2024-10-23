@@ -1,0 +1,22 @@
+1.The command pwd will allow you to find your absolute plan when you are in a specific directory 
+2.The ls command should allow you to find all directories and files within the music directory, which is where the absolute path suggests you are. The unhidden files that will be displayed will be patterns.txt and symmetry.txt
+3.The command nano patterns.txt would allow you to edit the text file patterns.txt within the music directory.
+4.The command cat patterns.txt would allow you to print the contents of that file without opening it in a text editor. 
+5.The diff command can be used to denote the differences between patterns.txt and symmetry.txt.
+6.The command mv patterns.txt ~/math/calculus should move the text file to the calculus directory when you are in the music directory. 
+7.Once in the geometry directory to remove triangle.txt from this directory the command rm triangle.txt will delete triangle.txt.
+8.If you are in the music directory the command cd ../math will move you from the music directory back to the home directory and into the math directory. 
+9.Calling git init within the music directory will make math/ a local repository/
+10.Calling git remote add with the ssh key of a remote repository would connect the local math/ repository witha  remote math/ repository.
+11.To copy symmetry.txt to the local math repository firs cd into the music directory and then run the command cp symmetry.txt ~/math such that the text file is now in the math/ directory. 
+12.Calling git status within this repository will allow you to see what files have not been tracked by git and any modifications that were made within the directory. Git is not tracking symmetry.txt as it has not been added to the staging area and thus git is not made aware of its presence yet. 
+13.The command git add symmetry.txt will add only the copy of symmetry.txt to the math/ staging area. The command git add . will add all changes to files and directories to the staging area. 
+14.Yes git is now tracking symmetry.txt as it is in the staging area. To remove symmetry.txt from the staging area you can run the command git restore --staged symmetry.txt.
+15.The command git commit -m  “Message with explanation of what will be pushed”  will allow you to commit your staged files with a message.
+16. The command git push origin main should be used to push files to the main branch of your remote repository. As we have not created other branches of this local repository, the main branch should be pushed to.
+17.Within the math repository to create a new branch call git branch applied_math. 
+18. To move into the applied_math branch call git checkout applied_math
+19.To push all these changes to your remote repository you must first call git add . to add all files to staging area. Then call git commit -m “Added mechanics.txt file to applied_math branch” to denote what you are committing. Then call git push origin applied_math to push to the applied_math branch of your remote repository. If you switched back to your original branch before committing you would get an error message saying that you have unsaved changes in this branch that will not allow you to move branches before saving. 
+20.The git branch command will allow you to view all you branches. As we are in the applied_math branch it will be highlighted in green. 
+21. Calling git checkout main will allow you to move to your original branch. Calling git merge applied_math whilst in the main branch will merge the two branches. 
+
